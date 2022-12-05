@@ -1,4 +1,4 @@
-![This is an image](images/Banner.png)
+![This is an image](images/banner.png)
 
 ![GitHub](https://img.shields.io/github/license/DFGANDP/StyleGan2-Ada_Encoder_projector)
 
