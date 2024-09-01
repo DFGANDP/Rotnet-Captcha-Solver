@@ -147,7 +147,7 @@ Angle = 90
 * Make finetuning with W&B - easy improvement 
 * Train with different models
 * **The way it is trained can be improved** by other function loss and way model is feeded with data, after initial training it could be best to train it further only on very hard examples something like online-mining in FaceNet? (looking at loss and confidence score)
-
+* Visualization of original/preprocessed bad examples for better understanding of limitation 
 
 ## 📜 License
 
