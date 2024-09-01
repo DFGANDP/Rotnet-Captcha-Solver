@@ -146,6 +146,7 @@ Angle = 90
 * Looking at EDA (look at code for more info) it seems to be reasonable to have 2 networks one small which will in general classify stuff and second which will be responsible in looking only on very hard examples. Or something like this. For sure there is some paper which resolved similiar issue
 * Make finetuning with W&B - easy improvement 
 * Train with different models
+* **The way it is trained can be improved** by other function loss and way model is feeded with data, after initial training it could be best to train it further only on very hard examples something like online-mining in FaceNet? (looking at loss and confidence score)
 
 
 ## 📜 License
