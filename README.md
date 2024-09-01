@@ -38,7 +38,7 @@
 | numpy | Tensors |
 | torch torchvision | Uses cuda 124 |
 | pandas | Dataframes |
-| sklearn | Clusterization methods and datasceince |
+| sklearn | EDA and thershold |
 | matplotlib | Visualize charts |
 | PIL, opencv | Image preprocessing |
 
