@@ -68,7 +68,7 @@ This section provides an example output demonstrating the preprocessed images.
 
 * Output data 
 
-<img src="images/version2/Inference.png" />
+<img src="images/version2/inference.png" />
 
 
 ### Actually available models: EfficientNetb3, Resnet(any), SwinV2T
