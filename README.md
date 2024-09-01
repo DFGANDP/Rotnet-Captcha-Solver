@@ -115,6 +115,9 @@ For any given image, after preprocessing, there is **classification** pred if it
 ```
 First test model was trained with ResNet-18 and got:
 * HIGHREST ACCURACY: 0.7892497518082542
+
+Newest model was trained on Efficentnet and got:
+* HIGHREST ACCURACY: ~ 85%
 ```
 
 0. ### Example image
