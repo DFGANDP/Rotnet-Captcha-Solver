@@ -1,0 +1,10 @@
+pandas
+imagesize
+tqdm
+opencv-python
+Pillow
+numpy
+matplotlib
+jupyterlab
+scikit-learn
+seaborn

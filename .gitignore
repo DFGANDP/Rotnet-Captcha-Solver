@@ -1,0 +1,9 @@
+test.py
+.venv
+ComfyUI_00102_.png
+.ipynb_checkpoints
+best_model_efficentnetb3.pth
+best_model.pth
+cleaned_images.csv
+inference_results_with_confidence.csv
+model_checkpoint_all_data.pth
