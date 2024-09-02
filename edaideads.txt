@@ -1,0 +1,37 @@
+1. Analiza ogólnej dokładności i błędów sieci
+Średnia dokładność i strata: Oblicz średnią dokładność i stratę dla całego zbioru danych, aby zrozumieć ogólną wydajność modelu.
+Macierz pomyłek (Confusion Matrix): Stwórz macierz pomyłek, aby zobaczyć, które klasy (rotowane/nierotowane) są najczęściej mylone przez model.
+Analiza błędów False Positives/Negatives: Zbadaj przypadki, w których model niepoprawnie klasyfikuje obrazy jako rotowane lub nierotowane. Sprawdź, czy istnieje wzorzec w kątach rotacji, które są często mylone.
+
+2. Analiza pewności modelu (Confidence Analysis)
+Rozkład confidence score: Zbadaj rozkład pewności modelu dla prawidłowych i nieprawidłowych klasyfikacji. Sprawdź, czy model jest pewny swoich błędów (czyli wysokie confidence score dla błędnych klasyfikacji).
+Pewność vs. kąt rotacji: Analizuj, jak pewność modelu zmienia się w zależności od kąta rotacji. Może się okazać, że model jest mniej pewny przy pewnych kątach.
+
+3. Wpływ kąta rotacji na wyniki
+Dokładność w zależności od kąta rotacji: Sprawdź, jak model radzi sobie z różnymi kątami rotacji. Czy są kąty, przy których model ma wyraźnie niższą dokładność?
+Błędy w funkcji kąta rotacji: Zbadaj, jakie błędy popełnia model w zależności od kąta. Może się okazać, że model myli obrazy, gdy kąt rotacji jest bardzo mały lub bardzo duży.
+
+4. Analiza rozkładu etykiet prawdziwych vs. przewidywanych
+Porównanie rozkładu prawdziwych i przewidywanych etykiet: Zobacz, czy model ma tendencję do przewidywania jednej klasy częściej niż drugiej, co może wskazywać na problem z niezbalansowanymi klasami.
+
+5. Analiza na poziomie pojedynczych obrazów
+Wizualizacja błędnych klasyfikacji: Wyświetl przykłady obrazów, które zostały niepoprawnie sklasyfikowane przez model. Sprawdź, czy istnieją wspólne cechy (np. szumy, podobne wzorce), które prowadzą do błędów.
+Grad-CAM lub inne metody interpretacji modeli: Użyj technik takich jak Grad-CAM, aby zobaczyć, które części obrazów są najważniejsze dla modelu przy podejmowaniu decyzji. To pomoże zrozumieć, dlaczego model popełnia błędy na niektórych obrazach.
+
+
+6. Analiza przykładów outliers
+Identifikacja outliers: Wykryj przypadki, gdzie confidence score jest bardzo niski dla prawidłowych klasyfikacji lub bardzo wysoki dla błędnych klasyfikacji. Te przypadki mogą być interesujące do dalszej analizy, jako potencjalne outliers.
+Analiza outliers: Zbadaj outliers, aby zrozumieć, dlaczego model ma problem z ich klasyfikacją. Może to być spowodowane np. nietypowym oświetleniem, kształtem obiektu lub szumem w obrazie.
+
+
+7. Analiza wydajności sieci na różnych grupach obrazów
+Grupowanie obrazów: Spróbuj podzielić obrazy na różne grupy według cech takich jak kolor, jasność, tekstura, itp. Sprawdź, jak model radzi sobie na różnych grupach obrazów.
+Test na zestawach trudnych przykładów: Stwórz zbiór "trudnych" przykładów (np. bardzo małe kąty rotacji, obrazy z zakłóceniami) i sprawdź, jak model na nich działa.
+
+8. Analiza wyników na poziomie confidence threshold
+Dostosowanie progu confidence score: Sprawdź, jak zmiana progu pewności (confidence threshold) wpływa na wyniki modelu. Możesz zbadać, czy istnieje optymalny próg, który minimalizuje liczbę błędów.
+Precision-Recall Curve: Wygeneruj krzywą Precision-Recall, aby zobaczyć, jak zmiana progu wpływa na precyzję i czułość modelu.
+
+
+9. Analiza wyników na różnych etapach treningu
+Porównanie wyników dla różnych epok treningowych: Jeśli masz zapisy modeli z różnych etapów treningu, możesz porównać, jak wyniki modelu zmieniały się w czasie. To może pomóc zrozumieć, czy model przetrenowuje się na pewnych kątach lub obrazach.

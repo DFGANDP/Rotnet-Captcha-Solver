@@ -83,7 +83,7 @@ This section provides an example output demonstrating the preprocessed images.
 ### Files
 | File | desc |
 | --- | --- |
-|1. RotNetDataGenerator.ipynb | Old version
+|1. images/version1/RotNetDataGenerator.ipynb | Old version
 |2. RotNetSecondVersion.ipynb| Actual version
 
 
